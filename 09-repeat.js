@@ -1,12 +1,10 @@
 /* 09 - Escreva uma função que receba dois parâmetros. O primeiro parâmetro é o elemento que repetirá, enquanto que
 o segundo será o número de vezes que haverá repetição. Um array será retornado. */
 
-function repetir(a, num) {
-    let result = [];
-    for (let i = 0; i < num; i++) {
-        result.push(a);
-    }
-    return result;
+function repeat(a, num) {
+    return Array(a).fill(num);
 }
 
-console.log(repetir(7, 3));
+console.log(repeat(5, 5)); 
+console.log(repeat(5, 15)); 
+console.log(repeat(15, 5)); 

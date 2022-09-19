@@ -5,15 +5,15 @@ seja informado, seu valor padrão deverá ser false, portanto, a lógica será e
 é igual a minimo ou a maximo. */
 
 
-function estaEntre(numero, minimo, maximo, inclusivo) {
-    if(inclusivo === true) {
-        if(numero >= minimo && numero <= maximo) {
+function isBetween(number, minimum, maximum, inclusive) {
+    if(inclusive === true) {
+        if(number >= minimum && number <= maximum) {
             return true;
         } else {
             return false;
         }
     } else {
-        if(numero > minimo && numero < maximo) {
+        if(number > minimum && number < maximum) {
             return true;
         } else {
             return false;
@@ -21,7 +21,12 @@ function estaEntre(numero, minimo, maximo, inclusivo) {
     }
 }
 
-console.log(estaEntre(9,10,100));
-console.log(estaEntre(101,10,100));
-console.log(estaEntre(11,10,100));
-console.log(estaEntre(99,10,100));
+console.log(isBetween(9,10,100,false));
+console.log(isBetween(101,10,100,false));
+console.log(isBetween(11,10,100,false));
+console.log(isBetween(99,10,100,false));
+console.log('----------------------');
+console.log(isBetween(9,10,100,true));
+console.log(isBetween(101,10,100,true));
+console.log(isBetween(10,10,100,true));
+console.log(isBetween(100,10,100,true));

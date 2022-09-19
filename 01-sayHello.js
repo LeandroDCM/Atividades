@@ -2,8 +2,8 @@
 com ponto de exclamação "!" no final. */
 
 
-function dizerOla(name) {
+function sayHello(name) {
     return `Olá, ${name}!` 
 }
 
-console.log(dizerOla('Leandro'));
+console.log(sayHello('Leandro'));

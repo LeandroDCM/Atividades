@@ -4,18 +4,23 @@ numérico, o retorno será o número inverso. Por exemplo, se for fornecido 1, o
 entrada não for de nenhum dos tipo acima, retorne "booleano ou número esperados, mas o parâmetro é do tipo ...". */
 
 
-function inverso(arg) {
-    if (typeof arg === 'boolean' && arg === true) {
+function inverse(arg) {
+    if (typeof arg === 'number') {
+        return arg * -1;
+    } else if (arg === true){
         return false;
-    } else if (typeof arg === 'boolean' && arg === false) {
+    } else if (arg === false){
         return true;
-    } else if (typeof arg === 'number' && arg >= 0) {
-        return -Math.abs(arg);
-    } else if (typeof arg === 'number' && arg < 0) {
-        return Math.abs(arg);
     } else {
         return `booleano ou número esperados, mas o parâmetro é do tipo ${typeof arg}`;
     }
 }
 
-console.log(inverso(20))
+console.log(inverse(-20))
+console.log(inverse(20))
+console.log(inverse(true))
+console.log(inverse(false))
+console.log(inverse('inehoff'));
+console.log(inverse(null))
+
+

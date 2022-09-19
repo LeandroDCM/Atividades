@@ -3,8 +3,8 @@ OBS: Considere que um ano tem 365 dias. Desconsidere anos bissextos (com 366 dia
 também dias decorridos desde o último aniversário. */
 
 
-const converterIdade = (anos) => {
+const convertAge = (anos) => {
     return anos * 365;
 }
 
-console.log(converterIdade(25));
+console.log(convertAge(25));

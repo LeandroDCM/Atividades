@@ -5,10 +5,10 @@ da quantidade de horas trabalhadas no mês multiplicada pelo valor da sua hora. 
 salário líquido do funcionário no mês. */
 
 
-const calcSalario = (horas, pagamento) => {
-    let bruto = horas * pagamento;
-    let resultado = bruto * (1 - .30)
-    return Math.ceil(resultado);
+const calcSalary = (hours, payment) => {
+    let full = hours * payment;
+    let result = Math.ceil(full * (1 - .30))
+    return (`Salário líquido é igual a R$${result}.`);
 }
 
-console.log(calcSalario(180,60));
+console.log(calcSalary(180,60));
